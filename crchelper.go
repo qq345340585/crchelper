@@ -66,7 +66,7 @@ func CheckSum(data []byte, polystr string, initstr string, xoroutstr string, ref
 // 反转poly
 func reverse_poly(poly uint64, width uint64) uint64 {
 	num := Str2DEC(reverseString(convertToBin(poly, width)))
-	logs.Warn("polyIn:0x%0x,numOut:0x%0x", poly, num)
+	logs.Debug("polyIn:0x%0x,numOut:0x%0x", poly, num)
 	return num
 }
 
